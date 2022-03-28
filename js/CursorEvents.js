@@ -42,7 +42,7 @@ AFRAME.registerComponent("cursor-events", {
             })
         }
     },
-    handleViewState: function() {
+    /*handleViewState: function() {
         const el = this.el
         const id = el.getAttribute("id")
         const placesContainer = document.querySelector("#places-container")
@@ -53,7 +53,7 @@ AFRAME.registerComponent("cursor-events", {
             const skyEl = document.querySelector("#main-container")
             skyEl.setAttribute("material", {src: `./assets/360_images/${selectedItemId}/${id}.jpg`, color: "#fff"})
         }
-    },
+    },*/
     handleClickEvents: function() {
         this.el.addEventListener("click", (evt) => {
             const placesContainer = document.querySelector("#places-container")
@@ -69,9 +69,9 @@ AFRAME.registerComponent("cursor-events", {
                 }
             }
 
-            if (state === "change-view" || state === "view") {
+            /*if (state === "change-view" || state === "view") {
                 this.handleViewState()
-            }
+            }*/
         })
     }
   });
